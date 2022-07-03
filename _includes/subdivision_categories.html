@@ -1,0 +1,13 @@
+<div class="container-fluid">
+<div class="row">
+
+{% for subcategory in page.subcategories %}
+	<div class="col col-lg-4 col-sm-12 col-12 bottom20 top20">
+			<h1><a href="/categorie/{{subcategory.name | slugify }}" class="btn btn-primary btn-lg text-white">{{ subcategory.name| capitalize }}</a></h1>
+            <hr>
+			<p>{{ subcategory.description }}</p>
+     </div>
+{% endfor %}
+
+</div>
+</div>
