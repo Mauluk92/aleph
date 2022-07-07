@@ -1,5 +1,5 @@
 <nav class="navbar navbar-light navbar-expand-md bg-primary text-white">
         <a class="navbar-brand text-white navbar-navigation" href="/">Aleph</a>
 		<a class="navbar-navigation navbar-nav ml-auto text-white navbar-navigation" href="/categorie">Categorie</a>
-		<a class="navbar-navigation navbar-nav ml-auto text-white navbar-navigation" href="/categorie/{{page.category}}/{{page.title | slugify }}">{{ page.title | capitalize}}</a>
+		<a class="navbar-navigation navbar-nav ml-auto text-white navbar-navigation" href="/categorie/{{ page.category | slugify }}/{{page.title | slugify }}">{{ page.title | capitalize}}</a>
 </nav>
