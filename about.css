@@ -1,14 +1,14 @@
 #box-navigation .navigation-other {
   margin-left: 5px;
   font-family: "Lucida Console", "Courier New", monospace;
-  font-size: 1.5vh;
+  font-size: 1.5vw;
   text-decoration: none;
   color: black;
 }
 
 #homepage-anchor {
   color: royalblue;
-  font-size: 2vh;
+  font-size: 2vw;
   text-decoration: none;
 }
 
@@ -26,7 +26,7 @@
   flex-direction: column;
   text-align: center;
   font-family: "Lucida Console", "Courier New", monospace;
-  font-size: 1.5vh;
+  font-size: 1.5vw;
 }
 
 summary {
@@ -47,7 +47,7 @@ details > summary {
 
 button {
   background-color: white;
-  font-size: 1.5vh;
+  font-size: 1.5vw;
   border: none
 }
 
@@ -67,6 +67,15 @@ li {
 @media only screen and (max-width: 600px){
   p {
     font-size: larger;
+  }
+  strong {
+    font-size: larger;
+  }
+  summary {
+    font-size: larger;
+  }
+  a {
+    font-weight: bold;
   }
 
 }

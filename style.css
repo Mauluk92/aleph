@@ -4,7 +4,7 @@
   flex-direction: column;
   font-family:  "Lucida Console", "Courier New", monospace;
   text-align: center;
-  font-size: 1.5vh;
+  font-size: 1.5vw;
 }
 
 #box-central-content strong {
@@ -13,7 +13,7 @@
 
 #box-central-content em {
   font-family:  "Arial", "Arial", a, serif;
-  font-size: 4vh;
+  font-size: 4vw;
   color: steelblue;
 }
 
@@ -24,14 +24,14 @@
 #box-navigation .navigation-other {
   margin-left: 5px;
   font-family: "Lucida Console", "Courier New", monospace;
-  font-size: 1.5vh;
+  font-size: 1.5vw;
   text-decoration: none;
   color: black;
 }
 
 #homepage-anchor {
   color: royalblue;
-  font-size: 2vh;
+  font-size: 2vw;
   text-decoration: none;
 }
 
@@ -70,7 +70,7 @@ img {
 @media only screen and (max-width: 600px){
   p {
     font-size: larger;
-    font-weight: bold;
+    font-weight: bolder;
   }
   em {
     font-size: larger;
