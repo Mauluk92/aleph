@@ -64,6 +64,13 @@ li {
   margin: 1em;
 }
 
+@media only screen and (max-width: 600px){
+  p {
+    font-size: large;
+  }
+
+}
+
 @keyframes fadeIn {
   0% {opacity: 0;
     font-size: 4vh;}
