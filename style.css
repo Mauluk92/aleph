@@ -73,8 +73,9 @@ img {
     font-weight: bolder;
     margin: 20px;
   }
-  #box-greeting em {
+  #box-central-content strong {
     font-size: 5vw;
+    font-weight: bolder;
   }
   #homepage-anchor {
     font-size: 10vw;
