@@ -1,14 +1,14 @@
 #box-navigation .navigation-other {
   margin-left: 5px;
   font-family: "Lucida Console", "Courier New", monospace;
-  font-size: 1.5vw;
+  font-size: 1.5vh;
   text-decoration: none;
   color: black;
 }
 
 #homepage-anchor {
   color: royalblue;
-  font-size: 2vw;
+  font-size: 2vh;
   text-decoration: none;
 }
 
@@ -26,12 +26,12 @@
   flex-direction: column;
   text-align: center;
   font-family: "Lucida Console", "Courier New", monospace;
-  font-size: 1.5vw;
+  font-size: 1.5vh;
 }
 
 summary {
   font-family: "Lucida Console", "Courier New", monospace;
-  font-size: 2vw;
+  font-size: 2vh;
   color: steelblue;
 }
 
@@ -47,7 +47,7 @@ details > summary {
 
 button {
   background-color: white;
-  font-size: 1.5vw;
+  font-size: 1.5vh;
   border: none
 }
 
@@ -66,8 +66,8 @@ li {
 
 @keyframes fadeIn {
   0% {opacity: 0;
-    font-size: 4vw;}
+    font-size: 4vh;}
   100% {opacity: 1;
-    font-size: 2vw;}
+    font-size: 2vh;}
 }
 
