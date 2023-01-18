@@ -17,10 +17,6 @@
   color: steelblue;
 }
 
-#box-greeting em {
-  font-style: normal;
-}
-
 #box-navigation .navigation-other {
   margin-left: 5px;
   font-family: "Lucida Console", "Courier New", monospace;
@@ -86,7 +82,7 @@ img {
   img {
     width: 4.5vw;
   }
-  #greeting-paragraph {
+  #box-central-content em {
     font-size: 8vw;
   }
 
