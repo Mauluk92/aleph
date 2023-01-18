@@ -68,21 +68,18 @@ img {
 }
 
 @media only screen and (max-width: 600px){
-  body {
-    font-size: large;
-  }
-  p {
-    font-size: large;
+  #box-central-content {
+    font-size: 5vw;
     font-weight: bolder;
   }
   em {
-    font-size: x-large;
+    font-size: 5vw;
   }
   #homepage-anchor {
-    font-size: x-large;
+    font-size: 10vw;
   }
   .navigation-other {
-    font-size: large;
+    font-size: 8vw;
   }
 
 }

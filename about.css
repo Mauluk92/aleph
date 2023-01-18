@@ -25,7 +25,7 @@
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  width: 75%;
+  margin: 10px;
   font-family: "Lucida Console", "Courier New", monospace;
   font-size: 1.5vw;
 }
@@ -66,24 +66,25 @@ li {
 }
 
 @media only screen and (max-width: 600px){
-  p {
-    font-size: large;
+  #box-central-content {
+    font-size: 5vw;
+    font-weight: bolder;
   }
   strong {
-    font-size: large;
+    font-size: 5vw;
   }
   summary {
-    font-size: large;
+    font-size: 5vw;
   }
   a {
     font-weight: bolder;
-    font-size: large;
+    font-size: 5vw;
   }
   #homepage-anchor {
-    font-size: x-large;
+    font-size: 10vw;
   }
   .navigation-other {
-    font-size: large;
+    font-size: 8vw;
   }
 
 }
