@@ -69,10 +69,10 @@ img {
 
 @media only screen and (max-width: 600px){
   #box-central-content {
-    font-size: 5vw;
+    font-size: 4.5vw;
     font-weight: bolder;
   }
-  em {
+  #box-greeting em {
     font-size: 5vw;
   }
   #homepage-anchor {
@@ -80,6 +80,9 @@ img {
   }
   .navigation-other {
     font-size: 8vw;
+  }
+  img {
+    width: 4.5vw;
   }
 
 }
