@@ -71,6 +71,7 @@ img {
   #box-central-content {
     font-size: 4.5vw;
     font-weight: bolder;
+    margin: 20px;
   }
   #box-greeting em {
     font-size: 5vw;
