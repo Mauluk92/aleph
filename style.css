@@ -1,0 +1,75 @@
+#box-central-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family:  "Lucida Console", "Courier New", monospace;
+  text-align: center;
+  font-size: 1.5vw;
+}
+
+#box-central-content strong {
+  color: steelblue;
+}
+
+#box-central-content em {
+  font-family:  "Arial", "Arial", a, serif;
+  font-size: 4vw;
+  color: steelblue;
+}
+
+#box-greeting em {
+  font-style: normal;
+}
+
+#box-navigation .navigation-other {
+  margin-left: 5px;
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 1.5vw;
+  text-decoration: none;
+  color: black;
+}
+
+#homepage-anchor {
+  color: royalblue;
+  font-size: 2vw;
+  text-decoration: none;
+}
+
+#homepage-anchor:hover {
+  color: steelblue;
+}
+
+#homepage-anchor:active {
+  color: royalblue;
+}
+
+#greeting-paragraph {
+  animation: fadeIn 1s;
+}
+
+#presentation-paragraph {
+  animation: fadeIn 1.5s;
+}
+
+#skill-paragraph {
+  animation: fadeIn 2s;
+}
+
+#react-paragraph {
+  animation: fadeIn 2.5s;
+}
+
+#goodbye-paragraph {
+  animation: fadeIn 3s;
+}
+
+img {
+  width: 2vw;
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0;
+    font-size: 2vw;}
+  100% {opacity: 1;
+    font-size: 1.5vw;}
+}

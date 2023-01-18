@@ -1,8 +1,0 @@
-<nav class="navbar navbar-light navbar-expand-md bg-primary text-white">
-        <a class="navbar-brand text-white navbar-navigation" href="/">Aleph</a>
-	<ul class="navbar-nav ml-auto">
-		<li class="nav-item"><a class="nav-link text-white" href="/categorie">Categorie</a></li>
-		<li class="nav-item"><a class="nav-link text-white" href="/categorie/{{ page.category | lower | slugify }}">{{ page.category | capitalize}}</a></li>
-		<li class="nav-item"><a class="nav-link text-white" href="/categorie/{{ page.category | slufigy }}/{{ page.topic | slugify }}"> {{ page.topic | capitalize }}</a></li>
-	</ul>
-</nav>

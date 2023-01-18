@@ -1,0 +1,73 @@
+#box-navigation .navigation-other {
+  margin-left: 5px;
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 1.5vw;
+  text-decoration: none;
+  color: black;
+}
+
+#homepage-anchor {
+  color: royalblue;
+  font-size: 2vw;
+  text-decoration: none;
+}
+
+#homepage-anchor:hover {
+  color: steelblue;
+}
+
+#homepage-anchor:active {
+  color: royalblue;
+}
+
+#list-details {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 1.5vw;
+}
+
+summary {
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 2vw;
+  color: steelblue;
+}
+
+strong {
+  color: royalblue;
+}
+
+details > summary {
+  margin: 1.5em;
+  list-style: none;
+  animation: fadeIn 1s;
+}
+
+button {
+  background-color: white;
+  font-size: 1.5vw;
+  border: none
+}
+
+.github {
+  color: steelblue;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  margin: 1em;
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0;
+    font-size: 4vw;}
+  100% {opacity: 1;
+    font-size: 2vw;}
+}
+

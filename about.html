@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Work</title>
+  <meta name="description" content="Nicola Rossi portfolio section webpage">
+  <link rel="stylesheet" href="about.css">
+</head>
+<body>
+<div id="box-navigation">
+  <nav id="navbar-portfolio">
+    <a id="homepage-anchor" href="index.html">Home</a>
+    <a class="navigation-other" href="about.html">About</a>
+  </nav>
+</div>
+<div id="list-details">
+  <div class="detail-div">
+    <details>
+      <summary> Java </summary>
+      <p>As a backend developer, i worked with <strong>Quarkus</strong> and <strong>SpringBoot</strong> mainly.</p>
+      <p>Here's a list of projects i did on my own, available on github</p>
+      <ul>
+          <li>
+            <button id="qalasa-btn"><strong>Qalasà Mirror Labyrinth</strong></button>
+      <dialog id="qalasa">
+          <div id="qalasa-content">
+            <p>Fantasy-like puzzle game developed</p>
+            <p>while studying <strong>Gang of Four Book</strong></p>
+            <p>on Design Patterns</p>
+            <p>
+              <a class="github" href="https://github.com/Mauluk92/Qalasa">Github Link</a>
+            </p>
+          </div>
+      </dialog>
+          </li>
+        <li>
+          <button id="address-btn"><strong>Address Book</strong></button>
+          <dialog id="address">
+          <p>Servlet application with jsp technology</p>
+          <p>to record numbers and addresses on a relational DB</p>
+          <p><a class="github" href="https://github.com/Mauluk92/Rubrica_Course_Aesys">Github Link</a>
+          </dialog>
+        </li>
+      </ul>
+    </details>
+  </div>
+  <div class="detail-div">
+    <details>
+      <summary> Typescript and React </summary>
+      <p>I've minimal experience also with <strong>React</strong>, using <strong>Typescript</strong></p>
+      <p>Here's a custom library of components, developed with <strong>Storybook</strong></p>
+      <ul>
+        <li>
+          <button id="aleph-btn"><strong>Aleph Component Library</strong></button>
+        <dialog id="aleph-dialog">
+          <p>This project stemmed from my curiosity</p>
+          <p>during a project in which i had to use those technologies</p>
+          <p>Currently in progress</p>
+          <a href="https://github.com/Mauluk92/aleph-library-storybook">Github Link</a>
+        </dialog>
+        </li>
+      </ul>
+
+    </details>
+  </div>
+  <div class="detail-div">
+    <details>
+      <summary> Python and Django </summary>
+      <p>I started my career early on with <strong>Python</strong></p>
+      <p>Here's a list of projects with <strong>Django</strong> and <strong>Tkinter</strong></p>
+      <ul>
+        <li>
+          <button id="whiterose-tarot-btn"><strong>WhiteRose Tarot Reading Application</strong></button>
+          <dialog id="whiterose-tarot-dialog">
+            <p>This is a re-interpretation of</p>
+            <p>Rider-Waite-Smith Tarot Deck</p>
+            <p>It's my own tarot-reading web application</p>
+            <a href="https://github.com/Mauluk92/WhiteRose_Tarot">Github Link</a>
+          </dialog>
+        </li>
+      </ul>
+    </details>
+
+  </div>
+</div>
+<script>
+  const qalasaModal = document.getElementById('qalasa');
+  const qalasaBtn = document.getElementById("qalasa-btn");
+  const addressModal = document.getElementById('address');
+  const addressBtn = document.getElementById('address-btn');
+  const alephModal = document.getElementById('aleph-dialog');
+  const alephBtn = document.getElementById('aleph-btn');
+  const whiteroseTarotModal = document.getElementById('whiterose-tarot-dialog');
+  const whiteroseTarotBtn = document.getElementById('whiterose-tarot-btn');
+
+  qalasaBtn.addEventListener('click', () => {
+    qalasaModal.showModal();
+  })
+  window.addEventListener('click', (e) => {
+    if(qalasaModal === e.target) {
+      qalasaModal.close();
+    }
+  })
+  addressBtn.addEventListener('click', () => {
+    addressModal.showModal();
+  })
+  window.addEventListener('click', (e) => {
+    if(addressModal === e.target) {
+      addressModal.close();
+    }
+  })
+  alephBtn.addEventListener('click', () => {
+    alephModal.showModal();
+  })
+  window.addEventListener('click', (e) => {
+    if(alephModal === e.target){
+      alephModal.close();
+    }
+  })
+  whiteroseTarotBtn.addEventListener('click', () => {
+    whiteroseTarotModal.showModal();
+  })
+  window.addEventListener('click', (e) => {
+    if(whiteroseTarotModal === e.target){
+      whiteroseTarotModal.close()
+    }
+  })
+</script>
+</body>
+</html>
