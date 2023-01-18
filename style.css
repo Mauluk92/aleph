@@ -86,6 +86,9 @@ img {
   img {
     width: 4.5vw;
   }
+  #box-greeting em {
+    font-size: 8vw;
+  }
 
 }
 
