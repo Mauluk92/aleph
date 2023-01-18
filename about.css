@@ -25,6 +25,7 @@
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  width: 75%;
   font-family: "Lucida Console", "Courier New", monospace;
   font-size: 1.5vw;
 }
@@ -66,16 +67,23 @@ li {
 
 @media only screen and (max-width: 600px){
   p {
-    font-size: larger;
+    font-size: large;
   }
   strong {
-    font-size: larger;
+    font-size: large;
   }
   summary {
-    font-size: larger;
+    font-size: large;
   }
   a {
-    font-weight: bold;
+    font-weight: bolder;
+    font-size: large;
+  }
+  #homepage-anchor {
+    font-size: x-large;
+  }
+  .navigation-other {
+    font-size: large;
   }
 
 }
