@@ -62,11 +62,11 @@ button {
     font-size: 5vw;
   }
   summary {
-    font-size: 5vw;
+    font-size: 6vw;
+    font-weight: bold;
   }
   a {
     font-size: 5vw;
-    margin: 20px;
   }
   #list-details{
     font-size: 5vw;
@@ -76,6 +76,9 @@ button {
   }
   #box-navigation .navigation-other {
     font-size: 8vw;
+  }
+  .github {
+    margin-top: 1em;
   }
 
 }
