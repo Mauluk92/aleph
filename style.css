@@ -69,7 +69,8 @@ img {
 
 @media only screen and (max-width: 600px){
   p {
-    font-size: large;
+    font-size: larger;
+    font-weight: bold;
   }
   em {
     font-size: larger;
@@ -78,8 +79,6 @@ img {
 
 
 @keyframes fadeIn {
-  0% {opacity: 0;
-    font-size: 2vh;}
-  100% {opacity: 1;
-    font-size: 1.5vh;}
+  0% {opacity: 0;}
+  100% {opacity: 1;}
 }
