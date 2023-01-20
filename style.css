@@ -143,6 +143,9 @@ ul {
   #list-details {
     text-align: center;
   }
+  #box-central-content {
+    font-size: 2.5vh;
+  }
 
 }
 
