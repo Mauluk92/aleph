@@ -10,13 +10,7 @@
 </head>
 
 <body>
-
-  <div id="box-navigation">
-    <nav id="navbar-portfolio">
-      <a id="homepage-anchor" href="index.html">Home</a>
-      <a class="navigation-other" href="about.html">About</a>
-    </nav>
-  </div>
+<div id="content">
   <div id="box-central-content">
       <p id="greeting-paragraph">
         <em>Hello!</em>
@@ -31,6 +25,79 @@
         Please, be my guest and have a look around! <img class="icon" src="smile_icon.ico"/>
       </p>
   </div>
+  <div id="list-details">
+      <div class="detail-div">
+              <button id="qalasa-btn">Java</button>
+              <dialog id="qalasa">
+                  <div id="qalasa-content">
+                      <p>As a backend developer, i worked with <strong>Quarkus</strong>, <strong>Mutiny</strong> and <strong>SpringBoot</strong> mainly.</p>
+                      <p>List of projects: </p>
+                      <ul>
+                          <li><a class="github" href="https://github.com/Mauluk92/Rubrica_Course_Aesys">Address book with servlet and jsp</a></li>
+                          <li><a class="github" href="https://github.com/Mauluk92/Qalasa">Fantasy like puzzle game, didactic project to study design patterns</a></li>
+                      </ul>
+                  </div>
+              </dialog>
+      </div>
+      <div class="detail-div">
+              <button id="aleph-btn">Javascript</button>
+              <dialog id="aleph-dialog">
+                  <div id="aleph-content">
+                  <p>I've got experience with <strong>React</strong> and <strong>Redux</strong>, using <strong>Typescript</strong></p>
+                      <p>List of projects: </p>
+                      <ul>
+                          <li><a class="github" href="https://github.com/Mauluk92/aleph-library-storybook">Library of components (using a <strong>Storybook</strong>): in progress</a></li>
+                      </ul>
+                  </div>
+              </dialog>
+      </div>
+      <div class="detail-div">
+              <button id="python-btn">Python</button>
+              <dialog id="python-dialog">
+                  <p>I started my career early on with a course on <strong>Python</strong> and <strong>Django</strong></p>
+                  <p>List of projects: </p>
+                  <ul>
+                      <li><a class="github" href="https://github.com/Mauluk92/WhiteRose_Tarot">My own tarot-reading web-application</a></li>
+                  </ul>
+              </dialog>
+          </details>
+
+      </div>
+  </div>
+</div>
+  <script>
+      const qalasaModal = document.getElementById('qalasa');
+      const qalasaBtn = document.getElementById("qalasa-btn");
+      const alephModal = document.getElementById('aleph-dialog');
+      const alephBtn = document.getElementById('aleph-btn');
+      const pythonModal = document.getElementById('python-dialog');
+      const pythonBtn = document.getElementById('python-btn');
+
+      qalasaBtn.addEventListener('click', () => {
+          qalasaModal.showModal();
+      })
+      window.addEventListener('click', (e) => {
+          if(qalasaModal === e.target) {
+              qalasaModal.close();
+          }
+      })
+      alephBtn.addEventListener('click', () => {
+          alephModal.showModal();
+      })
+      window.addEventListener('click', (e) => {
+          if(alephModal === e.target){
+              alephModal.close();
+          }
+      })
+      pythonBtn.addEventListener('click', () => {
+          pythonModal.showModal();
+      })
+      window.addEventListener('click', (e) => {
+          if(pythonModal === e.target){
+              pythonModal.close()
+          }
+      })
+  </script>
 </body>
 
 </html>
