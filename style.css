@@ -98,7 +98,7 @@ button {
   position: relative;
   font-size: 6vh;
   right: 60%;
-  animation: fadeIn ease-in 3s;
+  animation: fadeIn ease-in 5s;
 }
 
 #python-btn{
@@ -106,7 +106,7 @@ button {
   font-size: 4vh;
   right: 30%;
   top: 10%;
-  animation: fadeIn ease-in 3s;
+  animation: fadeIn ease-in 6s;
 }
 
 #qalasa-btn {
