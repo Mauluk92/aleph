@@ -138,7 +138,8 @@ ul {
   }
   #python-btn {
     font-size: 5vh;
-    position: static
+    position: static;
+    margin-bottom: 0.5em;
   }
   #list-details {
     text-align: center;
