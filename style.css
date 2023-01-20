@@ -2,9 +2,9 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  font-family:  "Lucida Console", "Courier New", monospace;
+  font-family:  "Arial", "Arial", a, serif;
   text-align: center;
-  font-size: 1.5vw;
+  font-size: 3vh;
 }
 
 #box-central-content strong {
@@ -13,21 +13,21 @@
 
 #box-central-content em {
   font-family:  "Arial", "Arial", a, serif;
-  font-size: 4vw;
+  font-size: 8vh;
   color: steelblue;
 }
 
 #box-navigation .navigation-other {
   margin-left: 5px;
-  font-family: "Lucida Console", "Courier New", monospace;
-  font-size: 1.5vw;
+  font-family: "Arial", "Arial", a, serif;
+  font-size: 3vh;
   text-decoration: none;
   color: black;
 }
 
 #homepage-anchor {
   color: royalblue;
-  font-size: 2vw;
+  font-size: 3vh;
   text-decoration: none;
 }
 
@@ -60,32 +60,7 @@
 }
 
 img {
-  width: 2vw;
-}
-
-@media only screen and (max-width: 600px){
-  #box-central-content {
-    font-size: 4.5vw;
-    font-weight: bolder;
-    margin: 20px;
-  }
-  #box-central-content strong {
-    font-size: 5vw;
-    font-weight: bolder;
-  }
-  #homepage-anchor {
-    font-size: 10vw;
-  }
-  #box-navigation .navigation-other {
-    font-size: 8vw;
-  }
-  img {
-    width: 4.5vw;
-  }
-  #box-central-content em {
-    font-size: 8vw;
-  }
-
+  width: 4vh;
 }
 
 

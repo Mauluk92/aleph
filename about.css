@@ -1,14 +1,14 @@
 #box-navigation .navigation-other {
   margin-left: 5px;
-  font-family: "Lucida Console", "Courier New", monospace;
-  font-size: 1.5vw;
+  font-family: "Arial", "Arial", a, serif;
+  font-size: 3vh;
   text-decoration: none;
   color: black;
 }
 
 #homepage-anchor {
   color: royalblue;
-  font-size: 2vw;
+  font-size: 4vh;
   text-decoration: none;
 }
 
@@ -26,13 +26,13 @@
   flex-direction: column;
   text-align: center;
   margin: 10px;
-  font-family: "Lucida Console", "Courier New", monospace;
-  font-size: 1.5vw;
+  font-family: "Arial", "Arial", a, serif;
+  font-size: 3vh;
 }
 
 summary {
-  font-family: "Lucida Console", "Courier New", monospace;
-  font-size: 2vw;
+  font-family: "Arial", "Arial", a, serif;
+  font-size: 4vh;
   color: steelblue;
 }
 
@@ -48,39 +48,13 @@ details > summary {
 
 button {
   background-color: white;
-  font-size: 1.5vw;
+  font-size: 3vh;
   border: none
 }
 
 .github {
   color: steelblue;
   text-decoration: none;
-}
-
-@media only screen and (max-width: 600px){
-  strong {
-    font-size: 5vw;
-  }
-  summary {
-    font-size: 6vw;
-    font-weight: bold;
-  }
-  a {
-    font-size: 5vw;
-  }
-  #list-details{
-    font-size: 5vw;
-  }
-  #homepage-anchor {
-    font-size: 10vw;
-  }
-  #box-navigation .navigation-other {
-    font-size: 8vw;
-  }
-  button {
-    margin-top: 1em;
-  }
-
 }
 
 @keyframes fadeIn {
