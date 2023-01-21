@@ -11,7 +11,7 @@
 
 <body>
 <div id="content">
-  <div id="box-central-content">
+  <div class="background" id="box-central-content">
       <p id="greeting-paragraph">
         <em>Hello!</em>
       </p>
@@ -27,7 +27,7 @@
   </div>
   <div id="list-details">
       <div class="detail-div">
-              <button id="qalasa-btn">Java</button>
+              <button class="background" id="qalasa-btn"><a>Java</a></button>
               <dialog id="qalasa">
                   <div class="dialog-content">
                       <p>As a backend developer, i worked with <strong>Quarkus</strong>, <strong>Mutiny</strong> and <strong>SpringBoot</strong> mainly.</p>
@@ -40,7 +40,7 @@
               </dialog>
       </div>
       <div class="detail-div">
-              <button id="aleph-btn">Javascript</button>
+              <button class="background" id="aleph-btn"><a>Javascript</a></button>
               <dialog id="aleph-dialog">
                   <div class="dialog-content">
                   <p>I've got experience with <strong>React</strong> and <strong>Redux</strong>, using <strong>Typescript</strong></p>
@@ -52,7 +52,7 @@
               </dialog>
       </div>
       <div class="detail-div">
-              <button id="python-btn">Python</button>
+              <button class="background" id="python-btn"><a>Python</a></button>
               <dialog id="python-dialog">
                   <div class="dialog-content">
                   <p>I started my career early on with a course on <strong>Python</strong> and <strong>Django</strong></p>
@@ -68,37 +68,30 @@
   </div>
 </div>
   <script>
-      const qalasaModal = document.getElementById('qalasa');
-      const qalasaBtn = document.getElementById("qalasa-btn");
-      const alephModal = document.getElementById('aleph-dialog');
-      const alephBtn = document.getElementById('aleph-btn');
-      const pythonModal = document.getElementById('python-dialog');
-      const pythonBtn = document.getElementById('python-btn');
+      const numberOfButtons = document.querySelectorAll("button");
+      const buttons = document.querySelectorAll("button").values();
+      const modals = document.querySelectorAll("dialog").values();
+      const backgroundElements = document.querySelectorAll(".background");
+      const components = [];
+      numberOfButtons.forEach(() => components.push({btn: buttons.next().value, modal: modals.next().value}))
+      const defineModal = function () {
+          console.log(components)
+          components.forEach((el) => {
+              el.btn.addEventListener('click', () => {
+                  el.modal.showModal();
+                  backgroundElements.forEach((el) => el.classList.add("fade-out-background"))
+              })
+              window.addEventListener('click', (e) => {
+                  if (el.modal === e.target) {
+                      el.modal.close();
+                      backgroundElements.forEach((el) => el.classList.remove("fade-out-background"))
+                  }
+              })
+          })
 
-      qalasaBtn.addEventListener('click', () => {
-          qalasaModal.showModal();
-      })
-      window.addEventListener('click', (e) => {
-          if(qalasaModal === e.target) {
-              qalasaModal.close();
-          }
-      })
-      alephBtn.addEventListener('click', () => {
-          alephModal.showModal();
-      })
-      window.addEventListener('click', (e) => {
-          if(alephModal === e.target){
-              alephModal.close();
-          }
-      })
-      pythonBtn.addEventListener('click', () => {
-          pythonModal.showModal();
-      })
-      window.addEventListener('click', (e) => {
-          if(pythonModal === e.target){
-              pythonModal.close()
-          }
-      })
+      }
+
+      defineModal()
   </script>
 </body>
 
